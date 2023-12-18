@@ -4,16 +4,16 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='envfetch',
-    version='2.0',
-    packages=['envfetch'],  # Указываем папку с вашими модулями
+    name='envdatareader',
+    version='1.0',
+    packages=['envdatareader'],
     python_requires='>=3.6',
     install_requires=[
         'python-dotenv',
     ],
     author='hBroccoli',
-    author_email='vovo.r@yandex.ru',
-    description='EnvFetch - это библиотека на Python для управления переменными окружения в приложениях...',
+    #author_email='vovo.r@yandex.ru',
+    description='envdatareader - это библиотека на Python для управления переменными окружения в приложениях...',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/HermitBroccoli/EnvUtil',

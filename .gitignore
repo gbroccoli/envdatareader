@@ -3,5 +3,5 @@ dist/
 EnvUtil.egg-info/
 __pycache__
 dist
-envfetch.egg-info
+envdatareader.egg-info
 .pytest_cache

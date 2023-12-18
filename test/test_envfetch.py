@@ -4,11 +4,11 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from envfetch import EnvFetch
+from envdatareader import EnvDataReader
 
 @pytest.fixture
 def env_fetch():
-    return EnvFetch(file_path=".env")
+    return EnvDataReader(file_path=".env")
 
 def test_get_value_existing_key_with_value(env_fetch):
     env_fetch.variables = {"KEY": "VALUE"}
