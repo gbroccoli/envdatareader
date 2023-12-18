@@ -1,7 +1,8 @@
 LICENSE
 README.md
-main.py
 setup.py
+envfetch/__init__.py
+envfetch/envfetch.py
 envfetch.egg-info/PKG-INFO
 envfetch.egg-info/SOURCES.txt
 envfetch.egg-info/dependency_links.txt

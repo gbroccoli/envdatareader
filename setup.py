@@ -5,16 +5,15 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='envfetch',
-    version='1.1',
-    packages=[''],
-    py_modules=['EnvFetch'],
+    version='1.1.7',
+    packages=['envfetch'],  # Указываем папку с вашими модулями
     python_requires='>=3.6',
     install_requires=[
         'python-dotenv',
     ],
     author='hBroccoli',
     author_email='vovo.r@yandex.ru',
-    description='EnvFetch - это библиотека на Python для управления переменными окружения в приложениях. Она предоставляет удобный интерфейс для загрузки переменных окружения из файлов .env с использованием библиотеки python-dotenv. С помощью EnvUtil вы можете легко и безопасно управлять конфигурацией вашего приложения, храня чувствительные данные, такие как ключи API или настройки, в файле .env и использовать их в вашем коде.',
+    description='EnvFetch - это библиотека на Python для управления переменными окружения в приложениях...',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/HermitBroccoli/EnvUtil',

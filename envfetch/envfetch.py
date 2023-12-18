@@ -1,4 +1,5 @@
 from dotenv import dotenv_values
+import envfetch
 
 class EnvFetch:
 	def __init__(self, *, file_path=".env"):

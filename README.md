@@ -129,6 +129,65 @@
        # Выполняем обычные действия
        print("Running in standard mode.")
     ```
+6. **Расширение и Наследование EnvFetch**
+
+   Библиотека EnvFetch разработана с учетом гибкости и расширяемости, что позволяет легко наследовать ее и добавлять собственные функциональности, если вам нужно дополнительное поведение или поддержка специфических требований вашего проекта.
+
+   6.1 **Наследование EnvFetch**
+
+   Чтобы наследовать `EnvFetch` и добавить собственные функции, просто создайте новый класс, унаследованный от `EnvFetch`, и добавьте свои методы. Например:
+
+   ```python
+   from envfetch import EnvFetch
+
+   class MyEnvManager(EnvFetch):
+      def __init__(self, *args, **kwargs):
+         super().__init__(*args, **kwargs)
+
+      def my_custom_function(self):
+         # Ваш собственный код и логика
+         pass
+   ```
+   6.2 **Добавление новых методов**
+
+   Вы можете легко добавить свои собственные методы к наследованному классу. Например, предположим, что вы хотите добавить метод для проверки наличия всех необходимых переменных окружения:
+
+   ```python
+   from envfetch import EnvFetch
+
+   class MyEnvManager(EnvFetch):
+      def __init__(self, *args, **kwargs):
+         super().__init__(*args, **kwargs)
+
+      def check_required_variables(self, required_variables):
+         for var in required_variables:
+               if not self.get_value(var):
+                  raise ValueError(f"Variable '{var}' is required but not set in the environment.")
+   ```
+
+   6.3 **Использование наследованных классов**
+
+   После создания вашего наследованного класса, вы можете использовать его так же, как и оригинальный `EnvFetch`. Вот пример:
+
+   ```python
+   from myenvmanager import MyEnvManager
+
+   # Создаем экземпляр нашего наследованного класса
+   my_env = MyEnvManager()
+
+   # Используем стандартные методы EnvFetch
+   print(my_env.get_value("DP_HOST"))
+
+   # Используем наши собственные методы
+   my_env.check_required_variables(["API_KEY", "SECRET_KEY"])
+
+   # Вызываем собственный метод
+   my_env.my_custom_function()
+   ```
+
+   Таким образом, вы можете создать наследованный класс, который сочетает в себе функциональность EnvFetch и ваши собственные уникальные возможности, что делает его более адаптивным к специфическим требованиям вашего проекта.
+
+
 
 
 

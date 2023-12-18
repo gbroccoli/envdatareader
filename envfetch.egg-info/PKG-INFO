@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: envfetch
-Version: 1.1
-Summary: EnvFetch - это библиотека на Python для управления переменными окружения в приложениях. Она предоставляет удобный интерфейс для загрузки переменных окружения из файлов .env с использованием библиотеки python-dotenv. С помощью EnvUtil вы можете легко и безопасно управлять конфигурацией вашего приложения, храня чувствительные данные, такие как ключи API или настройки, в файле .env и использовать их в вашем коде.
+Version: 1.1.7
+Summary: EnvFetch - это библиотека на Python для управления переменными окружения в приложениях...
 Home-page: https://github.com/HermitBroccoli/EnvUtil
 Author: hBroccoli
 Author-email: vovo.r@yandex.ru
