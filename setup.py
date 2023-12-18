@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='envfetch',
-    version='1.1.7',
+    version='2.0',
     packages=['envfetch'],  # Указываем папку с вашими модулями
     python_requires='>=3.6',
     install_requires=[
