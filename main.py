@@ -1,6 +1,6 @@
 from dotenv import dotenv_values
 
-class EnvUtil:
+class EnvFetch:
 	def __init__(self, *, file_path=".env"):
 		self.file_path = file_path
 		self.variables = self.load_variables()

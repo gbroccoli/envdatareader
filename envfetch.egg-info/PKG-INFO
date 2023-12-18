@@ -1,3 +1,24 @@
+Metadata-Version: 2.1
+Name: envfetch
+Version: 1.1
+Summary: EnvFetch - это библиотека на Python для управления переменными окружения в приложениях. Она предоставляет удобный интерфейс для загрузки переменных окружения из файлов .env с использованием библиотеки python-dotenv. С помощью EnvUtil вы можете легко и безопасно управлять конфигурацией вашего приложения, храня чувствительные данные, такие как ключи API или настройки, в файле .env и использовать их в вашем коде.
+Home-page: https://github.com/HermitBroccoli/EnvUtil
+Author: hBroccoli
+Author-email: vovo.r@yandex.ru
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+
 # EnvFetch
 
 **EnvFetch** - универсальная библиотека, разработанная для эффективного управления переменными окружения и конфигурациями в ваших проектах. Она предоставляет интуитивно понятные инструменты для создания, управления и плавного переключения между различными настройками окружения, что значительно упрощает процесс разработки.
