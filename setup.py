@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='envdatareader',
-    version='1.0',
+    version='1.02',
     packages=['envdatareader'],
     python_requires='>=3.6',
     install_requires=[

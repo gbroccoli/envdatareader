@@ -1,5 +1,4 @@
 from dotenv import dotenv_values
-import EnvDataReader
 
 class EnvDataReader:
 	def __init__(self, *, file_path=".env"):
