@@ -11,3 +11,8 @@ class EnvDataReader:
 	def get_value(self, key, *, default=None) -> str:
 		value = self.variables.get(key)
 		return value if value is not None and value != '' else default
+	
+	def group_get(self, keys)->dict:
+		values = {key: self.get_value(key) for key in keys}
+
+		return values
