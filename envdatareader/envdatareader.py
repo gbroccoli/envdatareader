@@ -14,5 +14,4 @@ class EnvDataReader:
 	
 	def group_get(self, keys)->dict:
 		values = {key: self.get_value(key) for key in keys}
-
 		return values
