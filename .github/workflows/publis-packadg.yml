@@ -19,7 +19,7 @@ jobs:
         python-version: 3.12  # Здесь указывайте версию Python
 
     - name: Install dependencies
-      run: pip install python-dotenv  # Или используйте инструкции для установки зависимостей из pyproject.toml
+      run: pip install python-dotenv setuptools  # Или используйте инструкции для установки зависимостей из pyproject.toml
 
     - name: Build and publish
       run: |
