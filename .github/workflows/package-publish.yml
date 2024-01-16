@@ -22,7 +22,7 @@ jobs:
       run: pip install python-dotenv setuptools  # Или используйте инструкции для установки зависимостей из pyproject.toml
 
     - name: test
-      run: echo ${{ secrets.PYPI_TOKEN.PYPI_TOKEN }}
+      run: echo ${{ env.secrets.PYPI_TOKEN.PYPI_TOKEN }}
 
     #- name: Build and publish
     #  run: |
