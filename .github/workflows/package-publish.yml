@@ -21,11 +21,14 @@ jobs:
     - name: Install dependencies
       run: pip install python-dotenv setuptools  # Или используйте инструкции для установки зависимостей из pyproject.toml
 
-    - name: Build and publish
-      run: |
-        python setup.py sdist
-        pip install twine
-        twine upload dist/*
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ PYPI_TOKEN.PYPI_TOKEN }}
+    - name: test
+      run: echo ${{ secrets.PYPI_TOKEN }}
+
+    #- name: Build and publish
+    #  run: |
+    #    python setup.py sdist
+    #    pip install twine
+    #    twine upload dist/*
+    #  env:
+    #    TWINE_USERNAME: __token__
+    #    TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN.PYPI_TOKEN }}
