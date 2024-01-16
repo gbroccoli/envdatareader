@@ -1,31 +1,27 @@
-name: Publish to PyPI
+name: Publish Python Package
 
 on:
   push:
-    branches:
-      - main  # Здесь указывайте только ветку main
+    branches: 
+      - main  # Триггер только для ветки main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.12  # Здесь указывайте версию Python
-
+        python-version: '3.x'  # Установка версии Python
     - name: Install dependencies
-      run: pip install python-dotenv setuptools  # Или используйте инструкции для установки зависимостей из pyproject.toml
-
-    - name: Build and publish
       run: |
-        python setup.py sdist
-        pip install twine
-        twine upload --verbose dist/*
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+    - name: Build and publish
       env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: "${{secrets.PYPI_TOKEN}}"
+        TWINE_USERNAME: __token__  # Используйте секреты для TWINE_USERNAME
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}  # Токен PyPI
+      run: |
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
