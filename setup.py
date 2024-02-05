@@ -6,11 +6,11 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='envdatareader',
-    version='1.2',
+    version='1.3',
     packages=['envdatareader'],
     python_requires='>=3.7',
     package_data={
-        '': ['lib/envdatareader.dll', 'lib/envdatareader.so']
+        '': ['lib/*.dll', 'lib/*.so']
     },
     author='hBroccoli',
     # author_email='vovo.r@yandex.ru',

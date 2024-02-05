@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: envdatareader
-Version: 1.2
+Version: 1.3
 Summary: ('envdatareader - это библиотека на Python для управления ', 'переменными окружения в приложениях...')
 Home-page: https://github.com/HermitBroccoli/envdatareader
 Author: hBroccoli
