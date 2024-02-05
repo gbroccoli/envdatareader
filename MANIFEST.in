@@ -1,0 +1,2 @@
+include libs/*.dll
+include libs/*.so

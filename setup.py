@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 with open('README.md', encoding='utf-8') as f:
@@ -10,7 +10,7 @@ setup(
     packages=['envdatareader'],
     python_requires='>=3.7',
     package_data={
-        '': ['lib/*.dll', 'lib/*.so']
+        '': ['libs/*.dll', 'libs/*.so']
     },
     author='hBroccoli',
     # author_email='vovo.r@yandex.ru',
@@ -32,3 +32,5 @@ setup(
         'Programming Language :: Python :: 3.12',
     ],
 )
+
+print(find_packages())

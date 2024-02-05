@@ -1,3 +1,4 @@
+MANIFEST.in
 README.md
 setup.py
 envdatareader/__init__.py
@@ -6,4 +7,6 @@ envdatareader.egg-info/PKG-INFO
 envdatareader.egg-info/SOURCES.txt
 envdatareader.egg-info/dependency_links.txt
 envdatareader.egg-info/top_level.txt
+libs/envdatareader.dll
+libs/envdatareader.so
 test/test_envfetch.py

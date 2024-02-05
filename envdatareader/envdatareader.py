@@ -10,7 +10,7 @@ class EnvDataReader:
         else:
             lib_extension = '.so'
 
-        lib_filename = abspath(f'./lib/envdatareader{lib_extension}')
+        lib_filename = abspath(f'libs/envdatareader{lib_extension}')
         self._lib = ctypes.CDLL(lib_filename)
 
         self._lib.EnvDataReader_new.restype = ctypes.c_void_p
