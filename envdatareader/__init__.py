@@ -1,1 +1,1 @@
-from .envdatareader import EnvDataReader
+from .envdatareader import EnvDataReader # noqa

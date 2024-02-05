@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: envdatareader
+Version: 1.2
+Summary: ('envdatareader - это библиотека на Python для управления ', 'переменными окружения в приложениях...')
+Home-page: https://github.com/HermitBroccoli/envdatareader
+Author: hBroccoli
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
 # EnvDataReader
 
 **EnvDataReader** - универсальная библиотека, разработанная для эффективного управления переменными окружения и конфигурациями в ваших проектах. Она предоставляет интуитивно понятные инструменты для создания, управления и плавного переключения между различными настройками окружения, что значительно упрощает процесс разработки.

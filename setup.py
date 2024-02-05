@@ -1,16 +1,17 @@
 from setuptools import setup
 
+
 with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name='envdatareader',
-    version='1.03',
+    version='1.2',
     packages=['envdatareader'],
     python_requires='>=3.7',
-    install_requires=[
-        'python-dotenv',
-    ],
+    package_data={
+        '': ['lib/envdatareader.dll', 'lib/envdatareader.so']
+    },
     author='hBroccoli',
     # author_email='vovo.r@yandex.ru',
     description=(
@@ -19,7 +20,7 @@ setup(
     ),
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/HermitBroccoli/EnvUtil',
+    url='https://github.com/HermitBroccoli/envdatareader',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',

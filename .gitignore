@@ -1,7 +1,9 @@
-env/
-dist/
+env
+dist
 EnvUtil.egg-info/
 __pycache__
-dist
+dist/
 .pytest_cache
 envfetch.egg-info
+*.o
+venv
