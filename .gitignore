@@ -7,4 +7,4 @@ dist/
 envfetch.egg-info
 *.o
 venv
-envdatareader.egg-info
+envdatareader.egg-info/

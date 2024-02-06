@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 with open('README.md', encoding='utf-8') as f:
@@ -6,11 +6,13 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='envdatareader',
-    version='1.2',
+    version='1.6',
     packages=['envdatareader'],
     python_requires='>=3.7',
+    # include_package_data=True,
     package_data={
-        '': ['libs/*.dll', 'libs/*.so']
+        'envdatareader': ['envdatareader/libs/*.dll',
+                          'envdatareader/libs/*.so']
     },
     author='hBroccoli',
     # author_email='vovo.r@yandex.ru',

@@ -1,6 +1,6 @@
 import ctypes
 import platform
-from os.path import abspath
+from os.path import join, dirname
 
 
 class EnvDataReader:
@@ -10,7 +10,7 @@ class EnvDataReader:
         else:
             lib_extension = '.so'
 
-        lib_filename = abspath(f'libs/envdatareader{lib_extension}')
+        lib_filename = join(dirname(__file__), 'libs', f'envdatareader{lib_extension}')
         self._lib = ctypes.CDLL(lib_filename)
 
         self._lib.EnvDataReader_new.restype = ctypes.c_void_p

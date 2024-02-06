@@ -1,2 +1,2 @@
-include libs/*.dll
-include libs/*.so
+include envdatareader/libs/*.dll
+include envdatareader/libs/*.so
